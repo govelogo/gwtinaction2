@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:VerticalPanel>
+				<g:Grid>
+					<g:row>
+						<g:cell>Name</g:cell>
+						<g:customCell><g:TextBox ui:field="name" /></g:customCell>
+					</g:row>
+					<g:row>
+						<g:cell>Email</g:cell>
+						<g:customCell><g:TextBox ui:field="email" /></g:customCell>
+					</g:row>
+					<g:row>
+						<g:cell>Phone</g:cell>
+						<g:customCell><g:TextBox ui:field="phone" /></g:customCell>
+					</g:row>
+				</g:Grid>
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:Label>Notes</g:Label>
+				<g:TextArea ui:field="notes" />
+			</g:VerticalPanel>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel>
+			<g:Button ui:field="btnAdd" text="Add" />
+			<g:Button ui:field="btnCancel" text="Cancel" />
+		</g:HorizontalPanel>
+	</g:VerticalPanel>
+
+</ui:UiBinder> 

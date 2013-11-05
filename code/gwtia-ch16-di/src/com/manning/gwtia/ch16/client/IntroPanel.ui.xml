@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear Reader,</p>
+			<p>In this chapter we learned how to harness dependency injection in an application.</p>
+			<p>
+				<b>DI in GWT</b>
+				- We take the Photo Application from the MVP chapter and enhance it to use dependency injection using GIN (and Guice)
+				  The EventBus used across the application is injected via field injection, the rpc services via method (setter) injction
+				  and the views used by presenters are injected via constructor injection.  Presenters themselves are obtained via on-demand
+				  injection from the Ginjector interface.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

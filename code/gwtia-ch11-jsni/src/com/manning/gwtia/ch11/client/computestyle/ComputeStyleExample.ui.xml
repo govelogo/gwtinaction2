@@ -1,0 +1,92 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+    ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+    ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.inline{
+	display : inline;
+}
+
+.screen{
+	font-size : 12pt;
+	color: black;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+.info{
+	font-size : 10pt;
+	padding: 20px;
+}
+
+.box1{
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+	color: white;
+}
+
+.box2{
+	width: 300px;
+	height: 200px;
+	background-color: orange;
+}
+
+</ui:style>
+
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="45">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA JSNI ComputeStyle Example</g:Label>
+			<g:Label addStyleNames="{style.instr}">You can change the color style of the two boxes below and see the impact on the computed style on the right</g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="100">
+		<g:FlowPanel addStyleNames="{style.toolbar}">
+		   <g:FlowPanel addStyleNames="{style.inline}">
+		   		<g:Label>Box 1 Color:</g:Label>
+		   		<g:ListBox ui:field="box1Select"></g:ListBox>
+		   </g:FlowPanel>
+		   <g:FlowPanel addStyleNames="{style.inline}">
+		   		<g:Label>Box 2 Color:</g:Label>
+		   		<g:ListBox ui:field="box2Select"></g:ListBox>
+		   </g:FlowPanel>
+		</g:FlowPanel>
+	</g:south>
+	<g:center>
+		<g:DockLayoutPanel unit="PCT" addStyleNames="{style.screen}">
+		   <g:west size="50">
+		       <g:FlowPanel ui:field="box1" addStyleNames="{style.box1}">
+		   			<g:Label>BOX 1</g:Label>
+		   		    <g:FlowPanel ui:field="box2" addStyleNames="{style.box2}">
+		   		       <g:Label>BOX 2</g:Label>
+		     		</g:FlowPanel>
+		       </g:FlowPanel>
+		    </g:west>
+		    <g:east size="50">
+		       <g:FlowPanel>
+		          <g:Label>Box 2 Color Style</g:Label>
+		          <g:TextArea ui:field="styleDef"></g:TextArea>
+		          <g:Label>Box 2 Computed Color Style</g:Label>
+		          <g:TextArea ui:field="computedStyleDef"></g:TextArea>
+   		       </g:FlowPanel>
+   		    </g:east>
+		</g:DockLayoutPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

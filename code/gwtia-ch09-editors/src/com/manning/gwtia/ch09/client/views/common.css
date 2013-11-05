@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+@def fieldWidth 15em;
+
+.field {
+  display: inline;
+  width: fieldWidth;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.button {
+	width: 100%;
+}
+.exampleArea {
+	border-left: 1px solid #333333;
+	padding: 10px;
+}
+.title {
+	font-family: Verdana, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #323B38;
+	width: 100%;
+}
+.navPanel {
+	background: #EEEEEE;
+}
+.divider {
+	height: 10px;
+	background: #999999;
+}
+.website {
+	background-color: #DF1B1B;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.logo {
+	background-color: #ffffff;
+	height: 93px;
+}
+.important {
+	font-weight: bold;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.inline{
+	display : inline;
+	
+}
+
+
+  .label {
+      color: #333;
+      font-size: 10pt;
+      padding-right: 3px;
+   }
+    
+.screen{
+	font-size : 12pt;
+	color: gray;
+}
+
+.flowpanel{
+		background-color: #dddddd;
+		color: black;
+}
+
+
+.table {
+      width: 100%;
+ }

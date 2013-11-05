@@ -1,0 +1,5 @@
+#Sat May 14 18:35:02 CEST 2011
+eclipse.preferences.version=1
+jarsExcludedFromWebInfLib=C\:/Users/tacyad/workspace/gwtia-ch16-deferredbinding/lib/gwt-maps-noredist.jar|C\:/Users/tacyad/workspace/gwtia-ch16-deferredbinding/lib/gwt-ajaxloader.jar
+warSrcDir=war
+warSrcDirIsOutput=true

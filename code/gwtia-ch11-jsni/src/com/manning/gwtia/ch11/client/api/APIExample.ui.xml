@@ -1,0 +1,68 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.screen{
+	font-size : 12pt;
+	color: black;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+.info{
+	font-size : 10pt;
+	padding: 20px;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="65">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA Expose JavaScript API</g:Label>
+			<g:Label addStyleNames="{style.instr}"></g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:center>
+		<g:FlowPanel>
+			<g:CaptionPanel captionText="External HTML/JavaScript Application">
+				<g:HTMLPanel>
+					<button onClick='getRaceName();return false;'>Get Selected Race</button>
+					<div>
+					   Enrol to: <span id='raceName'>no selection</span>
+					</div>
+					<div>
+						Name: <input id='enrolName'></input> <button onClick='enrol(); return false;'>Sign Up</button>
+					</div>
+				</g:HTMLPanel>				
+			</g:CaptionPanel>
+			<g:CaptionPanel captionText="GWT Application">
+				<g:FlowPanel>
+				    <g:Label>Select Race</g:Label>
+				    <g:ListBox ui:field="race">
+				       <g:item>Vasaloppet</g:item>
+				       <g:item>Vätternrundan</g:item>
+				       <g:item>Lidingö loppet</g:item>
+				       <g:item>Vansbro simning</g:item>
+				    </g:ListBox>
+				    <g:CheckBox checked="false" ui:field="publishChange">Publish Change</g:CheckBox>				    
+				    <g:CaptionPanel captionText="Enrolled racers">
+				    	<g:FlowPanel ui:field="enrolled"></g:FlowPanel>
+				    </g:CaptionPanel>
+				</g:FlowPanel>
+			</g:CaptionPanel>
+		</g:FlowPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

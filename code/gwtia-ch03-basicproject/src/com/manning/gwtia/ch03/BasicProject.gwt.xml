@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a very basic GWT module file; you could compare to HelloWorld in Chapter 2, and see we haven't changed much -->
+<!-- We use the rename-to tag to give the project (and URL) a more handy name -->
+<module rename-to="BasicProject">
+	<!--  As always, we need to inherit the User module -->
+	<inherits name="com.google.gwt.user.User"/>
+
+	<!-- We tell the GWT compiler to compile all code in and below the client package -->
+	<source path="client" />
+	
+	<!--  We choose to use the built in CSS Chrome theme -->
+    <inherits name='com.google.gwt.user.theme.chrome.Chrome'/>
+    <!-- <inherits name='com.google.gwt.user.theme.clean.Clean'/>   -->
+    <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>  -->
+    <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/>  -->
+    
+    <!-- Here we define the class that contains the entry point -->
+	<entry-point class="com.manning.gwtia.ch03.client.BasicProject"/>
+	
+</module>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The PhotoWall specific module file -->
+<module>
+    <!-- Indicate the script needed to interact with flash objects; by including it in a module file 
+    definition, the GWT bootstrap code ensures it is loaded and available before our application starts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script> 
+</module>

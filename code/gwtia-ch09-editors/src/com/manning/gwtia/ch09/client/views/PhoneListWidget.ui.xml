@@ -1,0 +1,30 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+  <ui:style src="common.css">
+  	.phonesLabel{
+		font-weight: bold;
+		font-size: 16px;
+		text-align: center;
+		padding: 5px 0;
+		width: 100%;
+	}
+	.columnHeader{
+		display : inline;
+	    color: #333;
+     	 font-size: 12pt;
+      	padding-right: 125px;
+	
+	}
+  </ui:style>
+   <g:HTMLPanel>
+    <hr />
+    <g:FlowPanel>
+    	<g:Label height="44px" addStyleNames="{style.phonesLabel}" width="451px">Phones</g:Label>
+    </g:FlowPanel>
+    <g:FlowPanel height="34px">    
+    	<g:Label height="55%" addStyleNames="{style.columnHeader}" width="183px">Type</g:Label>
+    	<g:Label height="55%" addStyleNames="{style.columnHeader}" width="233px">Number</g:Label>   	
+    </g:FlowPanel>
+    
+    	<g:FlowPanel ui:field="container" width="447px" height="190px" />
+   </g:HTMLPanel>
+</ui:UiBinder>

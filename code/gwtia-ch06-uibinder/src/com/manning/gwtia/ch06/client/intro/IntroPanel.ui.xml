@@ -1,0 +1,75 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>Although the UIBinder chapter uses the S-Mart Login Form as the
+				example widget throughout the chapter, there were several versions
+				of
+				this widget as well as several other examples that had nothing to
+				do
+				with the widget. To help you better understand the material we
+				have
+				created this demo, which includes in addition to the final
+				LoginFormBox each version of the login form as well as the other
+				examples.</p>
+			<p>We hope that you learn as much from this Demo application as you
+				do
+				from each of the examples.</p>
+			<p>
+				<b>Show/Hide S-Mart Login</b>
+				- This will display or hide the finished S-Mart login form as it
+				was
+				designed to be displayed, which is approximately the center of the
+				page and overlaying any existing content.
+			</p>
+			<p>
+				<b>Show/Hide S-Mart Alt Login</b>
+				- This will display or hide an alternately styled version of the
+				login form. This was the original design but it had to be changed
+				because it was too dark for use in the book. So we included it as an
+				example of how to use the @UiTemplate annotation to provide two
+				layouts for the same widget.
+			</p>
+			<p>
+				<b>S-Mark Login (v1)</b>
+				- This will display version 1 of the login form, which has no
+				styling
+				and no event handling.
+			</p>
+			<p>
+				<b>S-Mark Login (v2)</b>
+				- This will display version 2 of the login form, which included the
+				additional error message HTML code in the template. Although the
+				template fields are bound to the Java class, there is still no
+				styling or event handling.
+			</p>
+			<p>
+				<b>DisclosurePanel Example</b>
+				- An example of using the DisclosurePanel in the template with the
+				header tag.
+			</p>
+			<p>
+				<b>SplitLayoutPanel Example</b>
+				- An example of using the SplitLayoutPanel in the template with
+				directional tags.
+			</p>
+			<p>
+				<b>Radio Buttons Example</b>
+				- An example of using RadioButton in a template. RadioButton uses
+				@UiConstructor to read the name attribute into the RadioButton
+				constructor.
+			</p>
+			<p>
+				<b>ClientBundle Example</b>
+				- An example of using @UiFactory to create use a static instance of
+				a ClientBundle and to ensure that a CssResource is properly
+				initialized.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

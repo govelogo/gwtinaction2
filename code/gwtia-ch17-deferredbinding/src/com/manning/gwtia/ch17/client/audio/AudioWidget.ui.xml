@@ -1,0 +1,25 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+			<g:LayoutPanel ui:field="player" width="400px" height="150px">
+				<g:layer left="0px" width="100px" top="0px" height="35px">
+					<g:Button ui:field="showplayer" text="Show/Hide"></g:Button>
+				</g:layer>
+				<g:layer left="100px" width="300px" top="0px" height="150px">
+					<g:FlowPanel ui:field="media"></g:FlowPanel>
+				</g:layer>
+				<g:layer left="0px" width="560px" top="35px" height="100px">
+					<g:FlowPanel>
+					    <g:Label ui:field="songName"></g:Label>
+						<g:CheckBox ui:field="autoplay" text="Auto Play" value="false"></g:CheckBox>
+						<g:CheckBox ui:field="loop" text="Loop"></g:CheckBox>
+						<g:FlowPanel>
+							<g:RadioButton ui:field="normal" text="normal" name="normal" value="true"></g:RadioButton>
+							<g:RadioButton ui:field="half" text="half" name="normal"></g:RadioButton>
+							<g:RadioButton ui:field="dble" text="dble" name="normal"></g:RadioButton>							
+						</g:FlowPanel>
+					</g:FlowPanel>
+				</g:layer>
+			</g:LayoutPanel>		
+
+</ui:UiBinder>

@@ -1,0 +1,66 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+
+<ui:style>
+.panel1 {
+	background-color: #FFCC33;
+	height: 390px;
+	width: 600px;
+}
+
+.wrapper {
+	height: 410px;
+	width: 620px;
+}
+
+.in{
+	border-width:5px;	
+	border-style:inset
+}
+
+.panelName{
+		color: #ffffff;
+		text-align: right;
+}
+.title {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+}
+.instr {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	text-align: left;
+	padding-bottom: 5px;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PCT">
+	<g:north size="5">
+		<g:FlowPanel>
+				<g:Label addStyleNames="{style.title}">Event Previewing</g:Label>
+				<g:Label addStyleNames="{style.instr}">Do something on the Panel and see what it is!</g:Label>
+				
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="40">
+		<g:FlowPanel>
+			<g:Button ui:field="clear">Clear Information</g:Button>
+			<g:Label ui:field="previewingStatus">Previewing eVENTS: OFF</g:Label>
+			<g:ScrollPanel height="80%" addStyleNames="{style.in}" ui:field="scroller">
+				<g:FlowPanel ui:field="comment"></g:FlowPanel>
+			</g:ScrollPanel> 
+		</g:FlowPanel>
+	</g:south>
+	<g:center>
+		<g:FocusPanel ui:field="wrapper" addStyleNames="{style.wrapper}">
+			<g:FocusPanel addStyleNames="{style.panel1}" ui:field="outer">
+			</g:FocusPanel>
+		</g:FocusPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

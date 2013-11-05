@@ -1,0 +1,53 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="45">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA JavaScriptOverlay Example</g:Label>
+			<g:Label addStyleNames="{style.instr}">This shows how to wrap a simple JavaScriptObject both as a JavaScript Object (top) and as an Overlay (bottom)</g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:center>
+	  <g:FlowPanel>
+	   <g:CaptionPanel captionText="Person JavaScriptObject Example">
+	   		<g:FlowPanel>
+	   			<g:Button ui:field="createPerson" enabled="false">Create Person  - waiting script load</g:Button>
+	   			<g:DisclosurePanel ui:field="details" animationEnabled="true" open="false">
+	   	   			<g:FlowPanel>
+  			   			<g:Label ui:field="name"></g:Label>
+	   					<g:Label ui:field="career"></g:Label>
+	   					<g:Label ui:field="description"></g:Label>
+	   	   			</g:FlowPanel>
+	   			</g:DisclosurePanel>	   			
+	   			<g:Button ui:field="changeCareer">Change Career</g:Button>
+	   		</g:FlowPanel>	  
+	   </g:CaptionPanel> 
+	   	   <g:CaptionPanel captionText="Person JavaScriptObject Overlay Example" >
+	   		<g:FlowPanel>
+	   			<g:Button ui:field="createPersonOverlay" enabled="false">Create Person - waiting script load</g:Button>
+	   			<g:DisclosurePanel ui:field="detailsOverlay" animationEnabled="true" open="false">
+	   	   			<g:FlowPanel>
+  			   			<g:Label ui:field="nameOverlay"></g:Label>
+	   					<g:Label ui:field="careerOverlay"></g:Label>
+	   					<g:Label ui:field="descriptionOverlay"></g:Label>
+	   	   			</g:FlowPanel>
+	   			</g:DisclosurePanel>	   			
+	   			<g:Button ui:field="changeCareerOverlay">Change Career</g:Button>
+	   		</g:FlowPanel>	  
+	   </g:CaptionPanel> 
+	 </g:FlowPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

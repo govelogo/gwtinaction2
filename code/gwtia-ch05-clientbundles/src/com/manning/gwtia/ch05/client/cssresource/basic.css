@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+@def SOME_BORDER solid;
+
+@eval BACKGROUND_COLOR com.manning.gwtia.ch05.shared.Theme.getProperty("background","white");
+@eval COLOR com.manning.gwtia.ch05.shared.Theme.getProperty("color","black");
+@eval DECORATION com.manning.gwtia.ch05.shared.Theme.getProperty("decoration","none");
+@eval FONT_SIZE com.manning.gwtia.ch05.shared.Theme.getProperty("fontsize","medium");
+@external two, three;
+
+.one {
+	color: white;
+}
+.one {
+	background-color: black;
+}
+
+.two {
+	color: white;
+	background-color: black;
+}
+
+.three {
+	color: black;
+	background-color: white;
+}
+
+
+.someBorder {
+	border: 1px SOME_BORDER black;
+	top: literal("expression(document.compatMode==\"CSS1Compat\" ? documentElement.scrollTop : document.body.scrollTop \\ 2)");
+}
+
+@url NO unavailable;
+
+.noCursor {
+  cursor: NO, pointer;
+}
+
+.themedLabel {
+	background-color: BACKGROUND_COLOR;
+	color: COLOR;
+	text-decoration: DECORATION;
+	font-size: FONT_SIZE;
+}
+
+@sprite .background {
+	gwt-image: "brushedMetal";
+}
+
+@if user.agent ie6 ie8 {
+  .themedLabel {
+    border: 1px SOME_BORDER black;
+  }
+}
+@elif !user.agent safari {
+  .themedLabel {
+    border: 1px SOME_BORDER black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@else {
+  .themedLabel {
+    border: 1px SOME_BORDER black;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@if (com.manning.gwtia.ch05.shared.Theme.isUseBoldFonts()) {
+	.themedLabel {
+	 font-weight: bold;
+	}
+}
+	

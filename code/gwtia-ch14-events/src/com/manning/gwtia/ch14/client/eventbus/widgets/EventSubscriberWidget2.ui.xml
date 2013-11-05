@@ -1,0 +1,11 @@
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="common.css"/>
+	<g:HTMLPanel>
+		<g:FlowPanel width="224px">
+			    <g:FlowPanel ui:field="container" width="223px" height="203px" />
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

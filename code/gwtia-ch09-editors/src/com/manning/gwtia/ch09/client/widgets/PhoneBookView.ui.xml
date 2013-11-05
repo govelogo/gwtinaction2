@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:dt='urn:import:com.manning.gwtia.ch09.client.widgets' >
+	<ui:style src="../common.css"/>
+	<g:HTMLPanel>
+	   <g:DockLayoutPanel unit="PX" height="398px">
+	<g:north size="130.0">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA Editors Example</g:Label>
+			<g:Label addStyleNames="{style.instr}">Click Save to update the backing PhoneBook object with data from the GUI.</g:Label>
+			<g:Label addStyleNames="{style.instr}">Click Clear to reset the GUI.</g:Label>
+			<g:Label addStyleNames="{style.instr}">Click Get to update GUI with backing object data.</g:Label>
+			<g:Label addStyleNames="{style.instr}" height="82px">Uses Editor with SimpleBeanEditorDriver and Editor with no-arg methods</g:Label>
+			
+			
+		</g:FlowPanel>
+	</g:north>
+	<g:center size="200">
+			<g:FlowPanel>
+					<dt:EmployeeEditor ui:field="employeeEditor"></dt:EmployeeEditor>
+					<dt:PhoneNumberEditor ui:field="phoneNumberEditor" height="244px"></dt:PhoneNumberEditor>
+			</g:FlowPanel>		
+	</g:center>
+	<g:south size="44.0">
+	
+	<g:FlowPanel>
+				<g:Button styleName="{style.important}" ui:field="fetchEmployeeButton" text="Get"/>
+				<g:Button styleName="{style.important}" ui:field="saveEmployeeButton" text="Save"/>
+				<g:Button styleName="{style.important}" ui:field="resetEmployeeButton" text="Clear"/>
+				
+	</g:FlowPanel>
+	</g:south>
+</g:DockLayoutPanel>
+	   
+	</g:HTMLPanel>
+</ui:UiBinder> 

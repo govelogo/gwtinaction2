@@ -1,0 +1,113 @@
+body {
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 400px;
+	background: #FFF;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	padding: 0;
+	background-color: rgb(12, 52, 83);
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.container #login-form {
+	padding: 1em 1em 0 1em;
+	margin: 0;
+}
+
+.login-submit {
+	margin: 1em 0;
+	color:#E1C882;
+	background-color: #81330F;
+	font-weight: bold;
+	border: #5792BF 2px solid;
+}
+
+.form-divider {
+	background-color: #5792BF;
+	height: 2px;
+}
+
+.container label {
+	color: #E1BF5E;
+}
+
+.error {
+	color: #F5FA5C;
+	font-size: 80%;
+}
+
+.ex {
+	font-family: monospace;
+	color: #f66;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.errorlineShow {
+	display: inline;
+	/* visibility: hidden; */
+}
+
+.errorline {
+	display: inline;
+	/* visibility: hidden; */
+}
+
+.container h1 {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	color: #E1C882;
+	background-color: rgb(34, 86, 125);
+}

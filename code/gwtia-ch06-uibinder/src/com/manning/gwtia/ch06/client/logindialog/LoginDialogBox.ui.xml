@@ -1,0 +1,49 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style src="LoginDialogBox.css" />
+
+<ui:style field="myStyle" type="com.manning.gwtia.ch06.client.logindialog.LoginDialogBox.MyStyle">
+	.hidden {
+		visibility: hidden;
+	}
+	.borderEmpty {
+		border: 3px #999999 solid;
+	}
+	.borderOk {
+		border: 3px green solid;
+	}
+	.borderError {
+		border: 3px red solid;
+	}
+</ui:style>
+
+<g:HTMLPanel>
+<div class="{style.container}">
+  <div class="{style.content}">
+    <h1>S-Mart Login</h1>
+    <div class="{style.formDivider}"></div>
+    <div id="login-form">
+    <ul>
+    <li><label>Email</label></li>
+    <li><g:TextBox ui:field="txtEmail" addStyleNames="{myStyle.borderEmpty}"/>
+      <div ui:field="eEmailError" class="{style.errorline} {myStyle.hidden}">
+        <span class="{style.ex}">X</span>
+        <span ui:field="eEmailErrorText" class="{style.error}">Email error</span>
+      </div>
+    </li>
+    <li><label>Password</label></li>
+    <li><g:TextBox ui:field="txtPassword" addStyleNames="{myStyle.borderEmpty}"/>
+      <div ui:field="ePassError" class="{style.errorline} {myStyle.hidden}">
+        <span class="{style.ex}">X</span>
+        <span ui:field="ePassErrorText" class="{style.error}">Password error</span>
+      </div>
+    </li>
+    <li><g:Button ui:field="btnLogin" text="Login" styleName="{style.login-submit}" /></li>
+    </ul>
+    </div>
+  </div>
+</div>
+</g:HTMLPanel>
+
+</ui:UiBinder>

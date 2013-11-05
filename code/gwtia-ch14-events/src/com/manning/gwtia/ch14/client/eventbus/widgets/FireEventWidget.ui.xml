@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+  <ui:style src="common.css">
+  </ui:style>
+   <g:HTMLPanel>
+    
+   <g:FlowPanel  ui:field="containerPanel" >      	 	
+    		<g:ListBox height="190px" ui:field="colorListBox" width="150px"  visibleItemCount='4'></g:ListBox> 
+    		
+    		<g:Button styleName="{style.important}" ui:field="changeColorButton" text="Change color"/>
+  		</g:FlowPanel>
+ 
+   </g:HTMLPanel>
+</ui:UiBinder>

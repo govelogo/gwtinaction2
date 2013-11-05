@@ -1,0 +1,15 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.surround{
+	border: solid lightblue 2px;
+}
+</ui:style>
+
+<g:HorizontalPanel  ui:field="panel" addStyleNames="{style.surround}">
+	<g:Label  ui:field="theQuestion">The Question</g:Label>
+	<g:TextBox  ui:field="theAnswer">The Answer</g:TextBox>
+</g:HorizontalPanel>
+
+</ui:UiBinder>

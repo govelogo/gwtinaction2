@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+table {
+	border-collapse: collapse;
+}
+
+table,th,td {
+	border: thin solid black;
+	text-align: center;
+}
+
+table td .name {
+	padding: 4px;
+	text-align: right;
+}
+
+table td .url {
+	width: 600px;
+	overflow: hidden;
+	padding: 4px;
+}
+
+table td .icon {
+	width: 50px;
+	height: 50px;
+}

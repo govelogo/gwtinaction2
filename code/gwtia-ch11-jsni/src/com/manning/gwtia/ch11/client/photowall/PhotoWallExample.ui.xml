@@ -1,0 +1,44 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:pw="urn:import:com.manning.gwtia.ch11.client.photowall">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.screen{
+	font-size : 12pt;
+	color: black;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+.info{
+	font-size : 10pt;
+	padding: 20px;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="65">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA 3rd Party JavaScript overlay</g:Label>
+			<g:Label addStyleNames="{style.instr}"></g:Label>
+			<g:ListBox ui:field="feeds"></g:ListBox>
+		</g:FlowPanel>
+	</g:north>
+	<g:center>
+	   <pw:PhotoWallWidget ui:field="theWall">
+	   </pw:PhotoWallWidget>	   
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

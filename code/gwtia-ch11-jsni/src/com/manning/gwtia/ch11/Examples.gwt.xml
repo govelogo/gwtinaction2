@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch11_jsni">
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<entry-point class='com.manning.gwtia.ch11.client.Examples' />
+	<source path='client' />
+	<!-- For client bundles used in the application -->
+	<inherits name="com.google.gwt.resources.Resources" />
+	
+	
+	<!-- Inherit modules in the individual examples (this is where the example specific module definitions are) -->
+	<!-- ...for the Compute Style example -->
+	<inherits name='com.manning.gwtia.ch11.client.computestyle.ComputeStyleExample' />
+	
+	<!-- ...for the Geo Locate Example -->
+	<inherits name='com.manning.gwtia.ch11.client.photowall.PhotoWall' />
+	
+	<!-- ...for the JSONP example -->
+	<inherits name='com.manning.gwtia.ch11.client.jsonp.JSONPExample' />
+
+</module>

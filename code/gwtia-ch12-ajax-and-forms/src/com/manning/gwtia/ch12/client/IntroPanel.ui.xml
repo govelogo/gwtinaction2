@@ -1,0 +1,49 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>In this chapter we built two playlist widgets and developed three
+				service classes, each of which get data from YouTube in various
+				ways.</p>
+			<p>
+				<b>JSONP Video Service</b>
+				- This will display the VideoPlaylist widget using the
+				JsonPVideoService.
+			</p>
+			<p>
+				<b>JS Overlay Video Service</b>
+				- This will display the VideoPlaylist widget using the
+				JsOverlayVideoService.
+			</p>
+			<p>
+				<b>XML Video Service*</b>
+				- This will display the VideoPlaylist widget using the
+				XmlVideoService. This requires the server to run the
+				XmlVideoProxyServlet in order to work properly.
+			</p>
+			<p>
+				<b>XML/Form Video Service*</b>
+				- This will display the VideoPlaylistForm widget, which makes use of
+				the XmlVideoService. This requires the server to run the
+				XmlVideoProxyServlet in order to work properly.
+			</p>
+			<p>&nbsp;</p>
+			<p style="font-style:italic;color:#9F0000">
+				* The examples that use the XmlVideoService make use of a proxy in
+				order to fetch the data from a remote server (e.g. YouTube). The
+				servlet must be installed on the same server that is used to host
+				the examples. The additional jar files required to run this servlet
+				are commons-httpclient, commons-codec, and commons-logging, all of
+				which are included with the example code or may be downloaded from
+				the
+				<a href="http://commons.apache.org/">Jakarta Commons website</a>
+				(http://commons.apache.org/).
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with type="com.manning.gwtia.ch14.client.eventbus.EventBusExamplePanel.Resources" field="resources" />
+	<ui:style src="common.css"/>
+	<g:HTMLPanel>
+	<table>
+		  <tr>
+			<td width="20%">Publisher<br /><g:FlowPanel ui:field="publisherPanel"  /></td>
+			<td width="40%">&nbsp; 
+			</td>  
+			<td width="40%">Subscriber<br /><g:FlowPanel ui:field="subscriber2Panel"  />
+			 </td>   
+		  </tr>	
+		  <tr>   
+		    <td colspan="3" align="center">
+		    <g:Image resource="{resources.eventbus}" />
+		    </td>
+		  </tr>
+		  <tr>
+		  	<td colspan="3" align="center">Subscriber<br /><g:FlowPanel ui:field="subscriber1Panel"  /></td>   
+		  </tr>    
+  	</table>
+  	</g:HTMLPanel>
+</ui:UiBinder> 

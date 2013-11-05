@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This module definition shows the replace-with tag required to handle differences between -->
+<!-- standard browsers and IE in the computed style example -->  
+<!-- MyStyle class contains the IE code, and the MyStyleStandard class the code for standards browsers -->
+<module>
+
+	<!-- Deferred Binding rule for MyStyle class -->
+	<!--  Essentially, replace MyStyle with MyStyleStandard if the user agent is Opera, Safari or Gecko1_8 -->
+	<replace-with class="com.manning.gwtia.ch11.client.computestyle.MyStyleStandard">
+		<when-type-is class="com.manning.gwtia.ch11.client.computestyle.MyStyle"/>
+		<any>
+			<when-property-is name="user.agent" value="opera"/>
+			<when-property-is name="user.agent" value="safari"/>
+			<when-property-is name="user.agent" value="gecko1_8"/>
+		</any>
+	</replace-with>
+</module>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch04_widgets">
+	<!-- inherit the standard User module as all GWT applications must -->
+	<inherits name='com.google.gwt.user.User' />
+	
+	<!-- Use the standard theme for widgets -->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	
+	<!-- note the entry point for the application -->
+	<entry-point class='com.manning.gwtia.ch04.client.Examples' />
+	
+	<!-- Indicate where the code that should be translated to Javascript can be found.
+	     By default this is in the client package, but we indicate that explicitly in
+	     this example, just to introduce the tag. -->
+	<source path='client' />
+</module>

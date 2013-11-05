@@ -1,0 +1,43 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:my="urn:com.manning.gwtia.chxx.client.audio">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.inline{
+	display : inline;
+}
+
+.screen{
+	font-size : 12pt;
+	color: gray;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="45">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA HTML5 Audio Example</g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:center>
+		<g:FlowPanel ui:field="center">
+
+		</g:FlowPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

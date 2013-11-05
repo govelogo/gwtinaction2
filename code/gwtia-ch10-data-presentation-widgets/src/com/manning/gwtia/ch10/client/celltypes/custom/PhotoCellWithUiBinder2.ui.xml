@@ -1,0 +1,18 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'>
+
+<ui:with field='title' type='java.lang.String'/>
+<ui:with field='img' type='java.lang.String'/>
+<ui:with field='date' type='java.lang.String'/>
+
+
+<table ui:field='theCell'>
+	<tr height="40px">
+	    <td rowspan="2"><input type="checkbox" ui:field="privacy">Private</input></td>
+		<td width="80px" rowspan="2" bgcolor="{img}"></td>	
+		<td><ui:text from='{title}'/></td>
+	</tr>
+	<tr>
+		<td>Taken: <ui:text from='{date}'/></td>
+	</tr>
+</table>
+</ui:UiBinder>

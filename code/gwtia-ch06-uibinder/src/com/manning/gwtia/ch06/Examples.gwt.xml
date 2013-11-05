@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch06_uibinder">
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<entry-point class='com.manning.gwtia.ch06.client.Examples' />
+	<source path='client' />
+</module>

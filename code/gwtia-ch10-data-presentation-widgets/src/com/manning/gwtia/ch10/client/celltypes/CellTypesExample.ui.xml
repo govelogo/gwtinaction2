@@ -1,0 +1,126 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+<ui:style>
+.cellStyle{ 
+	border: 1px solid;
+	padding: 3px;
+	width: 300px;
+}
+	
+.image{
+	width: 100px;
+	height: 150px;
+}
+
+.anchor{
+	color: blue;
+	text-decoration:underline;
+}
+</ui:style>
+
+	<g:TabLayoutPanel barUnit='PX' barHeight='20'>
+		<g:tab>
+			<g:header>Display Cells</g:header>
+			<g:CustomScrollPanel>
+			<g:FlowPanel>		
+				<g:CaptionPanel captionText="TextCell">
+					<c:CellWidget ui:field="textCell" addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>
+				<g:CaptionPanel captionText="NumberCell">
+					<c:CellWidget ui:field="numberCell" addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>
+				<g:CaptionPanel captionText="DateCell">
+					<c:CellWidget ui:field="dateCell" addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>
+				<g:CaptionPanel captionText="IconCellDecorator">
+					<c:CellWidget ui:field="iconCellDecorator" addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>
+				<g:CaptionPanel captionText="SafeHtmlCell">
+					<c:CellWidget ui:field="safeHtmlCell" addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>				
+				<g:CaptionPanel captionText="ImageCell">
+					<c:CellWidget ui:field="imageCell" addStyleNames="{style.cellStyle}, {style.image}"></c:CellWidget>
+				</g:CaptionPanel>				
+				<g:CaptionPanel captionText="ImageLoadingCell">
+					<c:CellWidget ui:field="imageLoadingCell" addStyleNames="{style.cellStyle}, {style.image}"></c:CellWidget>
+				</g:CaptionPanel>				
+				<g:CaptionPanel captionText="ImageResourceCell">
+					<c:CellWidget ui:field="imageResourceCell" addStyleNames="{style.cellStyle}, {style.image}"></c:CellWidget>
+				</g:CaptionPanel>
+				<g:CaptionPanel captionText="SafeImageCell">
+					<c:CellWidget ui:field="safeImageCell" addStyleNames="{style.cellStyle}, {style.image}"></c:CellWidget>
+				</g:CaptionPanel>
+			</g:FlowPanel>																	
+			</g:CustomScrollPanel>
+		</g:tab>
+		<g:tab>
+			<g:header>Editable Cells</g:header>
+			<g:CustomScrollPanel>			
+			<g:FlowPanel>
+				<g:CaptionPanel captionText="EditTextCell">
+					<c:CellWidget ui:field="editableTextCell"  addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>			
+				<g:CaptionPanel captionText="InputCell">
+					<c:CellWidget ui:field="inputCell"  addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>	
+				<g:CaptionPanel captionText="CheckboxCell">
+					<c:CellWidget ui:field="checkboxCell"  ></c:CellWidget>
+				</g:CaptionPanel>	
+				<g:CaptionPanel captionText="SelectionCell">
+					<c:CellWidget ui:field="selectionCell"  ></c:CellWidget>
+				</g:CaptionPanel>					
+				<g:CaptionPanel captionText="DatePickerCell">
+					<c:CellWidget ui:field="datePickerCell"  ></c:CellWidget>
+				</g:CaptionPanel>					
+			</g:FlowPanel>
+			</g:CustomScrollPanel>
+		</g:tab>
+		<g:tab>
+			<g:header>Action Cells</g:header>
+			<g:CustomScrollPanel>			
+			<g:FlowPanel>		
+				<g:CaptionPanel captionText="ButtonCell">
+					<c:CellWidget ui:field="buttonCell"  addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>	
+				<g:CaptionPanel captionText="ClickableTextCell">
+					<c:CellWidget ui:field="clickableTextCell"  addStyleNames="{style.cellStyle}, {style.anchor}"></c:CellWidget>
+				</g:CaptionPanel>	
+				<g:CaptionPanel captionText="ButtonTextCell">
+					<c:CellWidget ui:field="buttonTextCell"  addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>				
+				<g:CaptionPanel captionText="ActionCell">
+					<c:CellWidget ui:field="actionCell"  addStyleNames="{style.cellStyle}"></c:CellWidget>
+				</g:CaptionPanel>
+			</g:FlowPanel>
+			</g:CustomScrollPanel>
+		</g:tab>
+		<g:tab>
+			<g:header>Composite Cell</g:header>
+			<g:FlowPanel>
+				<g:CaptionPanel captionText="Standard Composite Cell">
+			   		<c:CellWidget ui:field="compositeCell" addStyleNames="{style.cellStyle}"></c:CellWidget>
+			   	</g:CaptionPanel>
+				<g:CaptionPanel captionText="User Rendered Composite Cell">
+			   		<c:CellWidget ui:field="compositeCellUser" addStyleNames="{style.cellStyle}"></c:CellWidget>
+			   	</g:CaptionPanel>
+			   	
+			</g:FlowPanel>
+		</g:tab>		
+		<g:tab>
+			<g:header>User Defined Cell</g:header>
+			<g:FlowPanel>
+				<g:CaptionPanel captionText="Custom Cell using SafeHtmlBuilder">
+			   		<c:CellWidget ui:field="userDefinedHtmlBuilder" addStyleNames="{style.cellStyle}"></c:CellWidget>
+			   	</g:CaptionPanel>
+				<g:CaptionPanel captionText="Custom Cell using SafeHtmlTemplate">
+			   		<c:CellWidget ui:field="userDefinedHtmlTemplate" addStyleNames="{style.cellStyle}"></c:CellWidget>
+			   	</g:CaptionPanel>
+				<g:CaptionPanel captionText="Custom Cell using UiBinder">
+			   		<c:CellWidget ui:field="userDefinedUiBinder" addStyleNames="{style.cellStyle}"></c:CellWidget>
+			   	</g:CaptionPanel>
+			</g:FlowPanel>
+		</g:tab>
+	</g:TabLayoutPanel>
+</ui:UiBinder>

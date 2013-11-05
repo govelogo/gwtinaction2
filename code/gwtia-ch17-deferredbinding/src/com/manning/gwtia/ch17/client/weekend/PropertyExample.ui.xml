@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+</ui:style>
+
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}" ui:field="label1">GWTiA Deferred Binding Property Example</g:Label>
+			<g:Label addStyleNames="{style.title}" ui:field="classUsed">Currently the Property value is: </g:Label>
+			<d:DatePicker ui:field="theDate"></d:DatePicker>
+			<g:Button ui:field="forceError">Force a property Error</g:Button>		    
+		</g:FlowPanel>
+   
+</ui:UiBinder>

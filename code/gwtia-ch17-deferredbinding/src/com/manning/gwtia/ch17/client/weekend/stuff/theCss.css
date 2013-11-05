@@ -1,0 +1,39 @@
+
+body{background-color: yellow;
+     background-image: url('party.jpg'); 
+     font-family: 'Chango', cursive;
+     color: rgb(238,255,13);
+     }
+     
+@external .gwt-Button;     
+.gwt-Button {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0.97) 0px 1px 0px 0px;
+	background-color: #ddaaaa;
+	border: 1px solid #29447E;
+	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+	font-weight: bold;
+    padding: 2px 6px;
+	height: 28px;
+    color: #fff;
+	border-radius: 5px;
+}
+
+@external .datePickerDayIsWeekend .gwt-DatePicker .datePickerDays .datePickerMonthSelector;
+.datePickerDayIsWeekend { background-color: yellow;
+                          color: lightgreen;}
+                          
+.gwt-DatePicker {background-color: yellow;
+                          color: white; }   
+                          
+.datePickerDays {background-color: #dddddd; }
+
+@if !user.agent ie6 ie8  {
+
+.datePickerMonthSelector { background-color: #dddddd;
+						   opacity: 0.5;
+                         }
+}
+
+
+                          

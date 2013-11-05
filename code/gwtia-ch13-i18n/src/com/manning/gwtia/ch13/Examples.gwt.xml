@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Module file for Ch11 Internationalisation examples -->
+<!-- Module definition for individual examples can be found in the appropriate modules as listed below -->
+
+<module rename-to="gwtia_ch13_i18n">
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	
+	<!-- For client bundles  -->
+	<inherits name="com.google.gwt.resources.Resources" />
+	
+	<!-- Inherit the appropriate modules for our example applications -->
+	<inherits name="com.manning.gwtia.ch13.client.i18nstatic.StaticExampleModule" />
+	<inherits name="com.manning.gwtia.ch13.client.i18ndynamic.DynamicExampleModule" />
+	
+	<!-- Set the entry point -->
+	<entry-point class='com.manning.gwtia.ch13.client.Examples' />
+	
+	<source path='client' />
+</module>

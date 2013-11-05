@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch17_deferredbinding">
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	
+	<!-- For client bundles  -->
+	<inherits name="com.google.gwt.resources.Resources" />
+	
+	<inherits name='com.manning.gwtia.ch17.client.computestyle.ComputeStyleExample' />
+	<inherits name='com.manning.gwtia.ch17.client.weekend.WeekendMode' />
+	
+	<entry-point class='com.manning.gwtia.ch17.client.Examples' />
+	<source path='client' />
+</module>

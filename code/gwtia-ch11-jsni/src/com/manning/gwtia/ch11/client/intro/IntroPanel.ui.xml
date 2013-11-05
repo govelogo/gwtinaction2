@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>This is the set of examples that goes with the GWTiA JSNI chapter
+			</p>
+			<p>
+				<b>Computed Style</b>
+				- A simple example of JSNI in action to implement the DOM getComputedStyle method.  It uses deferred binding to manage browser differences.
+			</p>
+			<p>
+				<b>JavaScript Object</b>
+				- Exploring how to use JavaScriptObject and JavaScript Overlays to create a person object in JavaScript and change some details (most of the excitement is in the actual code).
+			</p>
+			<p>
+				<b>Wrapping JSON</b>
+				- Displays some photos live from Picassa; data is retrieved using the JsonpRequestBuilder object, we then use Overlays on that data to access the JSONP structure.
+			</p>
+			<p>
+				<b>Geolocate</b>
+				- This example shows geolocation in action on browsers that support it.  JSNI is used to call the browser's geolocate functionality and also make calls back into a Java LocationHandler object on success/failure.  If successful, the location is displayed on a Google Map (which itself is accessed via the gwt apis library, essentially a huge JSNI wrapping exercise made available from Google so you can treat Google Maps, and some other apis, as java objects in your applications)
+			</p>
+
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>The Internationalization and Accessibility chpater shows several approaches to 
+			increasing the uptake of your application. This demo shows all those in action</p>
+			<p>We hope that you learn as much from this Demo application as you
+				do
+				from each of the examples.</p>
+			<p>
+				<b>Static I18N</b>
+				- This shows the static i18n in action.
+			</p>
+			<p>
+				<b>Dynamic I18N</b>
+				- This shows dynamic i18n in ation.
+			</p>
+			<p>
+				<b>Direction</b>
+				- Shows the use of GWT Direction and Locale by automatically re-ordering a panel depending on whether locael is LTR or RTL.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

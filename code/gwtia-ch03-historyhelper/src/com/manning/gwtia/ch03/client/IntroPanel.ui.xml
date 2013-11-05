@@ -1,0 +1,34 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<!-- Simple UiBinder for the Intro panel for this chapters examples -->
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>Chapter 3 discusses layout panels and history management as part of the overall
+			application.  It mentions two helper applications that give simple examples of these
+			in action.</p>
+			<p>This is those two examples, and we hope that you learn as much from them application as you
+				do
+				from each of the examples.</p>
+			<p>
+				<b>Layout Example</b>
+				- This shows a layout panel in action.  You can click the animate button to see layout constraints animate.
+			</p>
+			<p>
+				<b>SplitPanelLayout Example</b>
+				- This shows a split layout panel in action.  You can move the sliders around to resize the panels, and click the animate button to see layout constraints animate back to original sizes.
+				In addition, the west panel has a minimum size constraint.
+			</p>
+			<p>
+				<b>History Example</b>
+				- This shows the history management in action.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

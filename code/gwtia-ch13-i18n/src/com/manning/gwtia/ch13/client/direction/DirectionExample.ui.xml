@@ -1,0 +1,70 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:my="urn:import:com.manning.gwtia.ch13.client.direction">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.inline{
+	display : inline;
+}
+
+.screen{
+	font-size : 12pt;
+	color: gray;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+.info{
+	font-size : 10pt;
+	padding: 20px;
+}
+
+.direction{
+	font-size : 10pt;
+	colour : black;
+	padding: 20px;
+	display : inline;	
+}
+
+</ui:style>
+
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="85">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA Direction Example</g:Label>
+			<g:Label addStyleNames="{style.instr}">Change the locale below to see the panel re-order itself based on the locale</g:Label>
+			<g:Label addStyleNames="{style.instr}">To see the Direction Estimators in action, copy and Paste this character, from an RTL locale, into the TextBox, the textbox will now be RTL: ج</g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="100">
+		<g:FlowPanel addStyleNames="{style.toolbar}">
+			<g:FlowPanel>
+				<g:Label addStyleNames="{style.inline}"><ui:msg>Select language:</ui:msg></g:Label>
+				<g:ListBox ui:field="language"></g:ListBox>
+			</g:FlowPanel>
+		</g:FlowPanel>
+	</g:south>
+	<g:center>
+		<g:FlowPanel addStyleNames="{style.screen}">
+		   <my:DataField ui:field="ourQuestion"></my:DataField>
+		   <g:FlowPanel>
+		   		<g:Label addStyleNames="{style.direction}">Is Right-to-Left locale?</g:Label>
+		   		<g:Label ui:field="dirNotification"  addStyleNames="{style.direction}"></g:Label>
+		   </g:FlowPanel>
+		</g:FlowPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

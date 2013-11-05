@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel>
+		<g:RadioButton name="bestActor" checked="true">Bruce Campbell</g:RadioButton>
+		<g:RadioButton name="bestActor">Timothy Hutton</g:RadioButton>
+		<g:RadioButton name="bestActor">Robert Redford</g:RadioButton>
+	</g:HTMLPanel>
+
+</ui:UiBinder> 

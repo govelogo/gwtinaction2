@@ -1,0 +1,36 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+    ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+    ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+</ui:style>
+
+ <g:MenuBar>
+   <g:MenuItem><ui:msg>View</ui:msg>
+     <g:MenuBar vertical="false">
+       <g:MenuItem ui:field="welcome"><ui:msg>Welcome</ui:msg></g:MenuItem>
+       <g:MenuItem ui:field="list"><ui:msg>Photo List</ui:msg></g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+   <g:MenuItem><ui:msg>Edit</ui:msg>
+     <g:MenuBar vertical="true">
+       <g:MenuItem ui:field="user"><ui:msg>User</ui:msg></g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+   <g:MenuItem><ui:msg>See</ui:msg>
+     <g:MenuBar vertical="true">
+       <g:MenuItem enabled="false"><ui:msg>Your Friends</ui:msg></g:MenuItem>
+       <g:MenuItem><ui:msg>Your Groups</ui:msg></g:MenuItem>
+       <g:MenuItem><ui:msg>Other People's Photos</ui:msg></g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+      <g:MenuItem><ui:msg>Language</ui:msg>
+     <g:MenuBar vertical="true">
+       <g:MenuItem ui:field="showEnglish"><ui:msg>English</ui:msg></g:MenuItem>
+       <g:MenuItem ui:field="showSwedish"><ui:msg>Swedish</ui:msg></g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+ </g:MenuBar>
+</ui:UiBinder>

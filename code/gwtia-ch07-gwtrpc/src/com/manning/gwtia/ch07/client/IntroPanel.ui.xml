@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear Reader,</p>
+			<p>In this chapter we learned the ins and outs of GWT-RPC. The
+				following examples were provided in this chapter.</p>
+			<p>
+				<b>GTwitter</b>
+				- This is a very basic frill-free Twitter client. To use it you enter in the
+				name of the Twitterer that you want to see updates for, and it downloads and
+				displays those updates.  GTwitter uses the Twitter4J client library, an open-source
+				tool that is freely available.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

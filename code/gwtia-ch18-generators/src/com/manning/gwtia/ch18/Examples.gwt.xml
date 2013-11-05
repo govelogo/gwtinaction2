@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch18_generators">
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	
+	<!-- Inherit the Generator example -->
+	<inherits name='com.manning.gwtia.ch18.client.generator.Generator' />
+	
+	<!-- Inherit client side run-time logging -->
+	<inherits name="com.google.gwt.logging.Logging"/>
+	
+	<entry-point class='com.manning.gwtia.ch18.client.Examples' />
+	<source path='client' />
+
+</module>

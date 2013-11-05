@@ -1,0 +1,20 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+</ui:style>
+
+
+<g:FocusPanel ui:field="container">
+<g:DeckPanel ui:field="decks">
+	<g:FlowPanel ui:field="viewmode">
+	   <g:Label ui:field="text">Test Label</g:Label>
+	</g:FlowPanel>
+	<g:FlowPanel ui:field="editmode">
+	   <g:TextBox ui:field="edit">Test Label</g:TextBox>
+	   <g:Button ui:field="okEdit">OK</g:Button>
+	   <g:Button ui:field="cancelEdit">Cancel</g:Button>
+	</g:FlowPanel>
+</g:DeckPanel>
+</g:FocusPanel>
+</ui:UiBinder>

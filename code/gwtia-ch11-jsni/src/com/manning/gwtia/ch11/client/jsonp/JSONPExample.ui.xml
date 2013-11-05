@@ -1,0 +1,54 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.title{
+	font-size : 14pt;
+}
+
+.instr{
+	font-size : 8pt;
+}
+
+.screen{
+	font-size : 12pt;
+	color: black;
+}
+
+.toolbar{
+		background-color: #dddddd;
+		color: black;
+}
+
+.info{
+	font-size : 10pt;
+	padding: 20px;
+}
+
+.full{
+	width : 100%;
+	height: 100%;
+}
+</ui:style>
+
+
+<g:DockLayoutPanel unit="PX">
+	<g:north size="45">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA JSONP JavaScript Object Wrapping Example</g:Label>
+			<g:Label addStyleNames="{style.instr}">Click on the Get Photos button to display a number of Photos from Picassa via JSONP</g:Label>
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="100">
+	   <g:FlowPanel>
+	   	   <g:Button ui:field="getPhotos">Get Photos</g:Button>
+	   </g:FlowPanel>
+	</g:south>
+	<g:center>
+	   <g:ScrollPanel addStyleNames="{style.full}">
+	      <g:FlowPanel ui:field="photoArea" addStyleNames="{style.full}"></g:FlowPanel>
+	   </g:ScrollPanel>	   
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

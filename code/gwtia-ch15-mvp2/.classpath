@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" path="test"/>
+	<classpathentry including="**/*.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/gwt2.5/gwt-user.jar"/>
+	<classpathentry kind="lib" path="C:/gwt2.5/gwt-dev.jar"/>
+	<classpathentry kind="lib" path="C:/gwt2.5/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="C:/gwt2.5/validation-api-1.0.0.GA.jar" sourcepath="C:/gwt2.5/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/AdamTacy/lib/json-org.jar"/>
+	<classpathentry kind="lib" path="C:/gwt2.5/gwt-codeserver.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

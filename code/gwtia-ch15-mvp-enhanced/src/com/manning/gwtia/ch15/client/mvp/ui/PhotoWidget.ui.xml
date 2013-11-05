@@ -1,0 +1,21 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.photoImage {
+	width: 230px;
+	height: 180px;
+}
+</ui:style>
+
+
+<g:DecoratorPanel>
+<g:FocusPanel ui:field="clickable">
+<g:FlowPanel addStyleNames="photo">
+		<g:Label ui:field="title"></g:Label>
+		<g:FlowPanel ui:field="photo" addStyleNames="{style.photoImage}"></g:FlowPanel>  
+		<g:Label ui:field="description"></g:Label>
+</g:FlowPanel>
+</g:FocusPanel>
+</g:DecoratorPanel>
+</ui:UiBinder>

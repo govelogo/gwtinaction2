@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="DataResourceUI.css"/>
+	<ui:with field='res'
+		type='com.manning.gwtia.ch05.client.dataresource.DataResources' />
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>URL</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td><g:Label text="{res.slashdot.getName}" 
+				  styleName="{style.name}"/></td>
+				<td><g:Label text="{res.slashdot.getSafeUri.asString}" 
+				  styleName="{style.url}"/></td>
+				<td><g:Image styleName="{style.icon}"
+				  url="{res.slashdot.getSafeUri.asString}" 
+				  altText="{res.slashdot.getName}"/></td>
+			</tr>
+			<tr>
+        <td><g:Label text="{res.bigPhoto.getName}" 
+          styleName="{style.name}"/></td>
+        <td><g:Label text="{res.bigPhoto.getSafeUri.asString}" 
+          styleName="{style.url}"/></td>
+				<td><g:Anchor href="{res.bigPhoto.getSafeUri.asString}" 
+				  text="{res.bigPhoto.getName}" target="_blank"/></td>
+			</tr>
+			<tr>
+        <td><g:Label text="{res.document.getName}" 
+          styleName="{style.name}"/></td>
+        <td><g:Label text="{res.document.getUrl}" 
+          styleName="{style.url}"/></td>
+				<td><g:Button ui:field="docButton" text="Load Resource"/></td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwtia_ch15_mvp'>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <inherits name='com.manning.gwtia.ch15.client.mvp.MVP'/>
+  <entry-point class='com.manning.gwtia.ch15.client.Examples'/>
+  <source path='client'/>
+  <source path='shared'/>
+</module>

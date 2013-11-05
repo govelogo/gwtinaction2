@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<!-- Use this binding to see the UIBinder version of interface -->    
+	<replace-with class="com.manning.gwtia.ch15.client.mvp.ClientFactoryUIBinderImpl">
+    	<when-type-is class="com.manning.gwtia.ch15.client.mvp.ClientFactory"/>
+ 	</replace-with>
+
+	<!-- Use this binding to see the old hard-coded version of interface -->  
+	<!--   
+	<replace-with class="com.manning.gwtia.ch15.client.mvp.ClientFactoryHardCodedImpl">
+    	<when-type-is class="com.manning.gwtia.ch15.client.mvp.ClientFactory"/>
+ 	</replace-with>
+	-->
+</module>

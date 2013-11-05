@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>gwtia-ch11-jsni</title>
+    <link type="text/css" rel="stylesheet" href="gwtia-ch11-jsni.css">
+    
+
+    
+    <!-- JavaScript that is used in the API example-->
+    <script type = "text/javascript" language="JavaScript">
+	    getRaceName = function(){
+	       document.getElementById('raceName').innerText = getRace();
+		};
+		enrol = function(){
+		   if (document.getElementById('raceName').innerText == 'no selection'){
+		      alert('Please select a race');
+		      return;
+		   }
+		   enrolRace(document.getElementById('enrolName').value, document.getElementById('raceName').innerText);
+		};
+		raceChanged = function(){
+		   getRaceName();
+		};
+    </script>
+    
+    <!-- GWT Application Bootstrap Javascript -->
+    <script type="text/javascript" language="javascript" src="gwtia_ch11_jsni/gwtia_ch11_jsni.nocache.js"></script>
+  </head>
+  <body>
+      <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+     <!-- JavaScript variable used in the 3rd party library wrapping example-->
+     <script>
+       var cooliris = {};
+    </script>
+  </body>
+</html>

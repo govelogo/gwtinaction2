@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:SimplePanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>Chapter 18 discusses the use of Generators to automatically generate code during compilation.
+			</p>
+			<p>This example shows the use of a Generator applied to all widgets (except UiBinder and LoggingPopUpPanel) that 
+			   adds code to the widget so that it logs which methods have been executed.  The logging goes to the LoggingPopupPanel that
+			   is shown in the application. 
+			</p>
+		</g:HTMLPanel>
+	</g:SimplePanel>
+
+</ui:UiBinder> 

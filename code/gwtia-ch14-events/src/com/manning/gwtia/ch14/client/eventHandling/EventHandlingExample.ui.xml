@@ -1,0 +1,81 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.outerPanel {
+	background-color: #ff3333;
+	height: 400px;
+	width: 600px;
+}	
+.innerPanel {
+	position: absolute;
+	background-color: #3333ff;
+	height: 200px;
+	width: 400px;
+	left: 100px;
+	top: 75px;
+	border-width:5px;	
+	border-style:inset
+}
+.innestPanel {
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	background-color: #33ff33;
+	height: 100px;
+	width: 200px;
+	border-width:5px;	
+	border-style:inset
+}
+
+.in{
+	border-width:5px;	
+	border-style:inset
+}
+
+.panelName{
+		color: #ffffff;
+		text-align: right;
+}
+.title {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+}
+.instr {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	text-align: left;
+	padding-bottom: 5px;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PCT">
+	<g:north size="5">
+		<g:FlowPanel>
+				<g:Label addStyleNames="{style.title}">Click a panel to see where the click event is fired</g:Label>
+				<g:Label addStyleNames="{style.instr}">You can disable event bubbling by clicking the button below the panels</g:Label>
+				
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="40">
+		<g:FlowPanel>
+			<g:Button ui:field="clear">Clear Information</g:Button>
+			<g:ToggleButton ui:field="bubble"></g:ToggleButton>
+			<g:ScrollPanel height="80%" addStyleNames="{style.in}">
+				<g:FlowPanel ui:field="comment"></g:FlowPanel>
+			</g:ScrollPanel> 
+		</g:FlowPanel>
+	</g:south>
+	<g:center>
+		<g:FocusPanel addStyleNames="{style.outerPanel}" ui:field="outer">
+			<g:FocusPanel addStyleNames="{style.innerPanel}" ui:field="inner">
+				<g:FocusPanel addStyleNames="{style.innestPanel}" ui:field="innermost"/>
+			</g:FocusPanel>
+		</g:FocusPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

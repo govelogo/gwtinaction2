@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>    
+<replace-with class="com.manning.gwtia.ch15.client.mvp.ClientFactoryImpl">
+    <when-type-is class="com.manning.gwtia.ch15.client.mvp.ClientFactory"/>
+ </replace-with>
+</module>

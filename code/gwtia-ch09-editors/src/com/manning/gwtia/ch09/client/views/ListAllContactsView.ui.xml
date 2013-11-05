@@ -1,0 +1,52 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+  <ui:style src="common.css">
+  	.contactsLabel{
+		font-weight: bold;
+		font-size: 16px;
+		text-align: center;
+		padding: 5px 0;
+		width: 100%;
+	}
+	.columnHeader{
+		display : inline;
+	    color: #333;
+     	 font-size: 12pt;
+      	padding-right: 150px;
+	
+	}
+	.scrollpanel
+		{
+			height: 250px;
+		}
+	
+  </ui:style>
+   <g:HTMLPanel>
+
+    <g:DockLayoutPanel unit="PX" height="629px">
+	<g:north size="138.0">
+	
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA Editor Example</g:Label>
+			<g:Label addStyleNames="{style.instr}" height="24px">Fetches from the server all contacts that have been previously inserted.</g:Label>
+			<g:Label addStyleNames="{style.instr}" height="32px">Uses CompositeEditor and RequestFactoryEditorDriver.</g:Label>
+		</g:FlowPanel>
+	</g:north>
+    <g:center size="200">
+    	<g:FlowPanel addStyleNames="{style.flowpanel}">
+    		<g:FlowPanel>
+    			<g:Label height="44px" addStyleNames="{style.contactsLabel}" width="451px">Contacts</g:Label>
+    		</g:FlowPanel>
+ 		 	<g:FlowPanel styleName="{style.scrollpanel}" ui:field="flowPanel" height="218px">
+	
+			</g:FlowPanel>
+		</g:FlowPanel>
+	</g:center>
+	<g:south size="127.0">
+		<g:FlowPanel>
+					<g:Button styleName="{style.important}" ui:field="deleteAllContactsButton" text="Delete all contacts"/>
+		
+		</g:FlowPanel>
+	</g:south>
+	</g:DockLayoutPanel>
+   </g:HTMLPanel>
+</ui:UiBinder>

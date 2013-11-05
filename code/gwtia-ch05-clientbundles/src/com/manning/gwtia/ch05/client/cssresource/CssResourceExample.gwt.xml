@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.1.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.1.0/distro-source/core/src/gwt-module.dtd">
+<module>
+  <inherits name="com.google.gwt.rpc.RPC"/>
+
+  <!-- set-property name="ClientBundle.enableInlining" value="false"/-->
+  <!-- set-configuration-property name="CssResource.obfuscationPrefix" value="empty" /-->
+  <!-- set-configuration-property name="CssResource.style" value="stable-notype"/ -->
+  
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<!-- We need to inherit the Jsonp module in order to use JsonRequestBuilder -->
+   	<inherits name='com.google.gwt.jsonp.Jsonp' />
+</module>

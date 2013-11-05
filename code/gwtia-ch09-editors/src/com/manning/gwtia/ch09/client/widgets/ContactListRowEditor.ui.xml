@@ -1,0 +1,13 @@
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../common.css"/>
+	<g:HTMLPanel>
+			<g:FlowPanel height="37px">
+				<g:LongBox ui:field="id" alignment="LEFT" width="190px" readOnly="true" enabled="false" height="31px" ></g:LongBox>
+				
+				<g:TextBox ui:field="name" textAlignment="ALIGN_LEFT" readOnly="true"  height="30px" width="230px"></g:TextBox>
+			</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

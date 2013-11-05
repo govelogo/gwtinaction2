@@ -1,0 +1,15 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:east size="15">
+   		<g:Label ui:field="delete">x</g:Label>
+   	</g:east>
+	<g:center>
+		<g:Label ui:field="tag"></g:Label>
+	</g:center>
+</g:DockLayoutPanel>
+</ui:UiBinder>

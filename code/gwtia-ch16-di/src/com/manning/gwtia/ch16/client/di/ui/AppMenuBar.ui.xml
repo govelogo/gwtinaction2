@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+</ui:style>
+
+ <g:MenuBar>
+   <g:MenuItem>View
+     <g:MenuBar vertical="false">
+       <g:MenuItem ui:field="welcome">Welcome</g:MenuItem>
+       <g:MenuItem ui:field="list">Photo List</g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+   <g:MenuItem>Edit
+     <g:MenuBar vertical="true">
+       <g:MenuItem ui:field="user">User</g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+   <g:MenuItem><b>See</b>
+     <g:MenuBar vertical="true">
+       <g:MenuItem enabled="false">Your Friends</g:MenuItem>
+       <g:MenuItem>Your Groups</g:MenuItem>
+       <g:MenuItem>Other People's Photos</g:MenuItem>
+     </g:MenuBar>
+   </g:MenuItem>
+ </g:MenuBar>
+</ui:UiBinder>

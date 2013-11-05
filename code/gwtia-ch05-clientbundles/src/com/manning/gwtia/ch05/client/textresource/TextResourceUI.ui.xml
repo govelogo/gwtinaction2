@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="TextResourceUI.css" />
+		
+	<ui:with field='res'
+		type='com.manning.gwtia.ch05.client.textresource.Resources' />
+	<g:HTMLPanel>
+		<table>
+		  <tr>
+		    <th>Resource Type</th>
+		    <th>Name</th>
+		    <th>Text</th>
+		  </tr>
+      <tr>
+		    <td class="{style.name}">TextResource</td>
+        <td><g:Label text="{res.text.getName}"
+          styleName="{style.name}"/></td>
+        <td><g:Label text="{res.text.getText}" 
+          styleName="{style.text}"
+          wordWrap="true"/></td>
+      </tr>
+      <tr>
+        <td class="{style.name}">ExternalTextResource</td>
+        <td><g:Label text="{res.extText.getName}"
+          styleName="{style.name}"/></td>
+        <td><g:Label ui:field="etextLabel" 
+          styleName="{style.text}"
+          wordWrap="true"/></td>
+      </tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

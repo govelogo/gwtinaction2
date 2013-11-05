@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM 
+    "http://dl.google.com/gwt/DTD/xhtml.ent">                       
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <g:HTMLPanel>
+  <div class="container">
+    <div class="content">
+      <h1>S-Mart Login</h1>
+      <div class="form-divider"></div>
+      <div id="login-form">
+        <ul>
+          <li><label>Email</label></li>
+          <li><g:TextBox /></li>
+          <li><label>Password</label></li>
+          <li><g:TextBox /></li>
+          <li><g:Button text="Login" styleName="login-submit" /></li>
+        </ul>
+        <div class="form-divider"></div>
+      </div>
+    </div>
+  </div>
+  </g:HTMLPanel>
+
+</ui:UiBinder>

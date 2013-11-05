@@ -1,0 +1,16 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.manning.gwtia.ch12.client">
+	<g:DecoratorPanel>
+		<g:VerticalPanel>
+			<g:FormPanel ui:field="form" method="POST">
+				<g:HorizontalPanel>
+					<g:TextBox name="query" width="200px" />
+					<g:ListBox ui:field="maxResults" name="maxResults" />
+					<g:Hidden name="urlEncode" value="true" />
+					<g:SubmitButton>Search</g:SubmitButton>
+				</g:HorizontalPanel>
+			</g:FormPanel>
+			<c:XmlVideoPlaylist ui:field="xmlPlaylist" visible="false" />
+		</g:VerticalPanel>
+	</g:DecoratorPanel>
+</ui:UiBinder> 

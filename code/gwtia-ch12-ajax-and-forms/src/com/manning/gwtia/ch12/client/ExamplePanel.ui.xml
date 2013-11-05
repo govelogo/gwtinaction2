@@ -1,0 +1,49 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<ui:style>
+.button {
+	width: 150px;
+}
+.exampleArea {
+	padding: 10px;
+}
+.title {
+	font-family: Verdana, sans-serif;
+	color: #336633;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px 0;
+}
+.navPanel {
+	background: #EEEEEE;
+	border-right: 1px solid #333333;
+}
+.divider {
+	height: 10px;
+	background: #999999;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PX">
+	<g:west size="150">
+		<g:FlowPanel addStyleNames="{style.navPanel}">
+			<g:Label addStyleNames="{style.title}">Examples</g:Label>
+			<g:HTML styleName="{style.divider}" />
+			<g:Button addStyleNames="{style.button}" ui:field="introPanel">Introduction</g:Button>
+			<g:HTML styleName="{style.divider}" />
+			<g:Button addStyleNames="{style.button}" ui:field="jsonp">JSONP Video Service</g:Button>
+			<g:Button addStyleNames="{style.button}" ui:field="jsoverlay">JS Overlay Video Service</g:Button>
+			<g:Button addStyleNames="{style.button}" ui:field="xml">XML Video Service*</g:Button>
+			<g:Button addStyleNames="{style.button}" ui:field="xmlform">XML/Form Video Service*</g:Button>
+		</g:FlowPanel>
+	</g:west>
+	<g:center>
+		<g:ScrollPanel>
+			<g:SimplePanel ui:field="exampleArea"  addStyleNames="{style.exampleArea}"/>
+		</g:ScrollPanel>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

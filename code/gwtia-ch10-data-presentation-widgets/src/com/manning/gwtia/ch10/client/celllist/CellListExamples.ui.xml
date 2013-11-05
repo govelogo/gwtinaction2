@@ -1,0 +1,43 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+<ui:style>
+.cellStyle{ 
+	border: 1px solid;
+	padding: 3px;
+	width: 300px;
+}
+	
+.image{
+	width: 100px;
+	height: 150px;
+}
+
+.anchor{
+	color: blue;
+	text-decoration:underline;
+}
+.title{
+	font-size: 18pt;
+}
+</ui:style>
+	<g:DockLayoutPanel unit="PX">
+		<g:north size="30">
+			<g:Label addStyleNames="{style.title}">CellList Example</g:Label>
+		</g:north>
+		<g:south size="20">
+			<g:FlowPanel>
+				<c:SimplePager ui:field="pager" location="CENTER"></c:SimplePager>
+			</g:FlowPanel>
+		</g:south>
+		<g:center>
+		<g:CustomScrollPanel>
+			<g:FlowPanel>
+				<c:CellList ui:field="photoList"></c:CellList>
+				<c:PageSizePager ui:field="pagerShowMore" increment="12"></c:PageSizePager>
+			</g:FlowPanel>
+		</g:CustomScrollPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder>

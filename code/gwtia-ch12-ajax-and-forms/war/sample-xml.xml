@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:media='http://search.yahoo.com/mrss/' xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007' gd:etag='W/&quot;DkIGRX44fCp7ImA9WxFbFU0.&quot;'>
+	<id>tag:youtube.com,2008:videos</id>
+	<updated>2010-07-07T12:08:44.034Z</updated>
+	<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+	<title>YouTube Videos matching query: "battleground europe"</title>
+	<logo>http://www.youtube.com/img/pic_youtubelogo_123x63.gif</logo>
+	<link rel='alternate' type='text/html' href='http://www.youtube.com'/>
+	<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos?v=2'/>
+	<link rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/batch?v=2'/>
+	<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos?q=%22battleground+europe%22&amp;start-index=1&amp;max-results=5&amp;orderby=published&amp;v=2'/>
+	<link rel='service' type='application/atomsvc+xml' href='http://gdata.youtube.com/feeds/api/videos?alt=atom-service&amp;v=2'/>
+	<link rel='next' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos?q=%22battleground+europe%22&amp;start-index=6&amp;max-results=5&amp;orderby=published&amp;v=2'/>
+	<author>
+		<name>YouTube</name>
+		<uri>http://www.youtube.com/</uri>
+	</author>
+	<generator version='2.0' uri='http://gdata.youtube.com/'>YouTube data API</generator>
+	<openSearch:totalResults>1177</openSearch:totalResults>
+	<openSearch:startIndex>1</openSearch:startIndex>
+	<openSearch:itemsPerPage>5</openSearch:itemsPerPage>
+	<entry gd:etag='W/&quot;A0YESX47eCp7ImA9WxFbFEQ.&quot;'>
+		<id>tag:youtube.com,2008:video:NQRoF-beQ48</id>
+		<published>2010-07-07T09:58:50.000Z</published>
+		<updated>2010-07-07T10:38:28.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Games' label='Gaming'/>
+		<title>Lifting from Antwerp</title>
+		<content type='application/x-shockwave-flash' src='http://www.youtube.com/v/NQRoF-beQ48?f=videos&amp;app=youtube_gdata'/>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=NQRoF-beQ48&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/NQRoF-beQ48/responses?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/NQRoF-beQ48/related?v=2'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/NQRoF-beQ48?v=2'/>
+		<author>
+			<name>BEshipers</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/beshipers</uri>
+		</author>
+		<yt:accessControl action='comment' permission='allowed'/>
+		<yt:accessControl action='commentVote' permission='allowed'/>
+		<yt:accessControl action='videoRespond' permission='moderated'/>
+		<yt:accessControl action='rate' permission='allowed'/>
+		<yt:accessControl action='embed' permission='allowed'/>
+		<yt:accessControl action='syndicate' permission='allowed'/>
+		<yt:accessControl action='list' permission='allowed'/>
+		<gd:comments>
+			<gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/NQRoF-beQ48/comments?v=2' countHint='0'/>
+		</gd:comments>
+		<media:group>
+			<media:category label='Gaming' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Games</media:category>
+			<media:content url='http://www.youtube.com/v/NQRoF-beQ48?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='122' yt:format='5'/>
+			<media:credit role='uploader' scheme='urn:youtube'>BEshipers</media:credit>
+			<media:description type='plain'>A bomber flight and escorts lift from Antwerp airfield. Clips from the MMOFPS Battleground Europe.</media:description>
+			<media:keywords/>
+			<media:player url='http://www.youtube.com/watch?v=NQRoF-beQ48&amp;feature=youtube_gdata'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/NQRoF-beQ48/default.jpg' height='90' width='120' time='00:01:01'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/NQRoF-beQ48/2.jpg' height='90' width='120' time='00:01:01'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/NQRoF-beQ48/1.jpg' height='90' width='120' time='00:00:30.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/NQRoF-beQ48/3.jpg' height='90' width='120' time='00:01:31.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/NQRoF-beQ48/hqdefault.jpg' height='360' width='480'/>
+			<media:title type='plain'>Lifting from Antwerp</media:title>
+			<yt:aspectRatio>widescreen</yt:aspectRatio>
+			<yt:duration seconds='122'/>
+			<yt:uploaded>2010-07-07T09:58:50.000Z</yt:uploaded>
+			<yt:videoid>NQRoF-beQ48</yt:videoid>
+		</media:group>
+	</entry>
+	<entry gd:etag='W/&quot;C0YERH47eCp7ImA9WxFbE0Q.&quot;'>
+		<id>tag:youtube.com,2008:video:39F5Zcntd5w</id>
+		<published>2010-07-06T04:08:19.000Z</published>
+		<updated>2010-07-06T04:38:25.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Games' label='Gaming'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='British Webley pistol'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='German Luger pistol'/>
+		<title>pistolcocks.avi</title>
+		<content type='application/x-shockwave-flash' src='http://www.youtube.com/v/39F5Zcntd5w?f=videos&amp;app=youtube_gdata'/>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=39F5Zcntd5w&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/39F5Zcntd5w/responses?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/39F5Zcntd5w/related?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=39F5Zcntd5w'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/39F5Zcntd5w?v=2'/>
+		<author>
+			<name>MyVidShots</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/myvidshots</uri>
+		</author>
+		<yt:accessControl action='comment' permission='allowed'/>
+		<yt:accessControl action='commentVote' permission='allowed'/>
+		<yt:accessControl action='videoRespond' permission='moderated'/>
+		<yt:accessControl action='rate' permission='allowed'/>
+		<yt:accessControl action='embed' permission='allowed'/>
+		<yt:accessControl action='syndicate' permission='allowed'/>
+		<yt:accessControl action='list' permission='allowed'/>
+		<gd:comments>
+			<gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/39F5Zcntd5w/comments?v=2' countHint='0'/>
+		</gd:comments>
+		<media:group>
+			<media:category label='Gaming' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Games</media:category>
+			<media:content url='http://www.youtube.com/v/39F5Zcntd5w?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='25' yt:format='5'/>
+			<media:content url='rtsp://v5.cache7.c.youtube.com/CiILENy73wIaGQmcd-3JZXnR3xMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='25' yt:format='1'/>
+			<media:content url='rtsp://v3.cache2.c.youtube.com/CiILENy73wIaGQmcd-3JZXnR3xMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='25' yt:format='6'/>
+			<media:credit role='uploader' scheme='urn:youtube'>MyVidShots</media:credit>
+			<media:description type='plain'>British Webley pistol, German Luger pistol, French Automatique 1935a 7.65mm pistol WWIIOnline Battleground Europe sound animation Cornered Rat Software CRS Combat Realistic Sounds</media:description>
+			<media:keywords>British Webley pistol, German Luger pistol</media:keywords>
+			<media:player url='http://www.youtube.com/watch?v=39F5Zcntd5w&amp;feature=youtube_gdata'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/39F5Zcntd5w/default.jpg' height='90' width='120' time='00:00:12.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/39F5Zcntd5w/2.jpg' height='90' width='120' time='00:00:12.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/39F5Zcntd5w/1.jpg' height='90' width='120' time='00:00:06.250'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/39F5Zcntd5w/3.jpg' height='90' width='120' time='00:00:18.750'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/39F5Zcntd5w/hqdefault.jpg' height='360' width='480'/>
+			<media:title type='plain'>pistolcocks.avi</media:title>
+			<yt:duration seconds='25'/>
+			<yt:uploaded>2010-07-06T04:08:19.000Z</yt:uploaded>
+			<yt:videoid>39F5Zcntd5w</yt:videoid>
+		</media:group>
+	</entry>
+	<entry gd:etag='W/&quot;D08CSH47eCp7ImA9WxFbFE0.&quot;'>
+		<id>tag:youtube.com,2008:video:RoMtXWnvFHA</id>
+		<published>2010-07-04T20:59:38.000Z</published>
+		<updated>2010-07-06T08:44:29.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment' label='Entertainment'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='Battleground Europe'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='ww2online'/>
+		<title>Hotchkiss H-39 Anomaly (Battleground Europe)</title>
+		<content type='application/x-shockwave-flash' src='http://www.youtube.com/v/RoMtXWnvFHA?f=videos&amp;app=youtube_gdata'/>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=RoMtXWnvFHA&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/RoMtXWnvFHA/responses?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/RoMtXWnvFHA/related?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=RoMtXWnvFHA'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/RoMtXWnvFHA?v=2'/>
+		<author>
+			<name>david06photo</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/david06photo</uri>
+		</author>
+		<yt:accessControl action='comment' permission='allowed'/>
+		<yt:accessControl action='commentVote' permission='allowed'/>
+		<yt:accessControl action='videoRespond' permission='moderated'/>
+		<yt:accessControl action='rate' permission='allowed'/>
+		<yt:accessControl action='embed' permission='allowed'/>
+		<yt:accessControl action='syndicate' permission='allowed'/>
+		<yt:accessControl action='list' permission='allowed'/>
+		<gd:comments>
+			<gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/RoMtXWnvFHA/comments?v=2' countHint='0'/>
+		</gd:comments>
+		<media:group>
+			<media:category label='Entertainment' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category>
+			<media:content url='http://www.youtube.com/v/RoMtXWnvFHA?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='51' yt:format='5'/>
+			<media:content url='rtsp://v1.cache2.c.youtube.com/CiILENy73wIaGQlwFO9pXS2DRhMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='51' yt:format='1'/>
+			<media:content url='rtsp://v8.cache1.c.youtube.com/CiILENy73wIaGQlwFO9pXS2DRhMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='51' yt:format='6'/>
+			<media:credit role='uploader' scheme='urn:youtube'>david06photo</media:credit>
+			<media:description type='plain'>Attacking this area of the Hotchkiss tank with the axis Panzerbuchse 39 will **eventually** result in a catastrophic explosion. This has worked in one shot, but usually takes many more.</media:description>
+			<media:keywords>Battleground Europe, ww2online</media:keywords>
+			<media:player url='http://www.youtube.com/watch?v=RoMtXWnvFHA&amp;feature=youtube_gdata'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/RoMtXWnvFHA/default.jpg' height='90' width='120' time='00:00:25.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/RoMtXWnvFHA/2.jpg' height='90' width='120' time='00:00:25.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/RoMtXWnvFHA/1.jpg' height='90' width='120' time='00:00:12.750'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/RoMtXWnvFHA/3.jpg' height='90' width='120' time='00:00:38.250'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/RoMtXWnvFHA/hqdefault.jpg' height='360' width='480'/>
+			<media:title type='plain'>Hotchkiss H-39 Anomaly (Battleground Europe)</media:title>
+			<yt:duration seconds='51'/>
+			<yt:uploaded>2010-07-04T20:59:38.000Z</yt:uploaded>
+			<yt:videoid>RoMtXWnvFHA</yt:videoid>
+		</media:group>
+		<yt:statistics favoriteCount='0' viewCount='37'/>
+	</entry>
+	<entry gd:etag='W/&quot;DkQGSH47eCp7ImA9WxFbE04.&quot;'>
+		<id>tag:youtube.com,2008:video:OVLI_YjhsWo</id>
+		<published>2010-07-04T14:57:22.000Z</published>
+		<updated>2010-07-05T12:52:09.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment' label='Entertainment'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='Battleground Europe'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='axis'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='ATR'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='ww2online'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='panzerbuchse 39'/>
+		<title>Axis ATR Guide for British Armor (Battleground Europe)</title>
+		<content type='application/x-shockwave-flash' src='http://www.youtube.com/v/OVLI_YjhsWo?f=videos&amp;app=youtube_gdata'/>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=OVLI_YjhsWo&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/OVLI_YjhsWo/responses?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/OVLI_YjhsWo/related?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=OVLI_YjhsWo'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/OVLI_YjhsWo?v=2'/>
+		<author>
+			<name>david06photo</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/david06photo</uri>
+		</author>
+		<yt:accessControl action='comment' permission='allowed'/>
+		<yt:accessControl action='commentVote' permission='allowed'/>
+		<yt:accessControl action='videoRespond' permission='moderated'/>
+		<yt:accessControl action='rate' permission='allowed'/>
+		<yt:accessControl action='embed' permission='allowed'/>
+		<yt:accessControl action='syndicate' permission='allowed'/>
+		<yt:accessControl action='list' permission='allowed'/>
+		<gd:comments>
+			<gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/OVLI_YjhsWo/comments?v=2' countHint='0'/>
+		</gd:comments>
+		<media:group>
+			<media:category label='Entertainment' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category>
+			<media:content url='http://www.youtube.com/v/OVLI_YjhsWo?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='401' yt:format='5'/>
+			<media:content url='rtsp://v3.cache8.c.youtube.com/CiILENy73wIaGQlqseGI_chSORMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='401' yt:format='1'/>
+			<media:content url='rtsp://v5.cache3.c.youtube.com/CiILENy73wIaGQlqseGI_chSORMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='401' yt:format='6'/>
+			<media:credit role='uploader' scheme='urn:youtube'>david06photo</media:credit>
+			<media:description type='plain'>This is a quick video detailing the most effective shots on the British armor list in the MMO Battleground Europe. Antitank rifles exist in the game but are quite difficult to use, so I made this video to assist newer players. The French tanks that are not present in the video, such as the Matilda and the Churchill series, are tanks which I was unable to find an effective attack point. I'm aware that there are other places to hit, but these are the ones I prefer personally. I've tried to narrow down the selection to only those shots which are guaranteed to kill the crew. RED areas will kill the gunner while GREEN will only kill the driver.</media:description>
+			<media:keywords>Battleground Europe, axis, ATR, ww2online, panzerbuchse 39</media:keywords>
+			<media:player url='http://www.youtube.com/watch?v=OVLI_YjhsWo&amp;feature=youtube_gdata'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/OVLI_YjhsWo/default.jpg' height='90' width='120' time='00:03:20.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/OVLI_YjhsWo/2.jpg' height='90' width='120' time='00:03:20.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/OVLI_YjhsWo/1.jpg' height='90' width='120' time='00:01:40.250'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/OVLI_YjhsWo/3.jpg' height='90' width='120' time='00:05:00.750'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/OVLI_YjhsWo/hqdefault.jpg' height='360' width='480'/>
+			<media:title type='plain'>Axis ATR Guide for British Armor (Battleground Europe)</media:title>
+			<yt:duration seconds='401'/>
+			<yt:uploaded>2010-07-04T14:57:22.000Z</yt:uploaded>
+			<yt:videoid>OVLI_YjhsWo</yt:videoid>
+		</media:group>
+		<gd:rating average='5.0' max='5' min='1' numRaters='1' rel='http://schemas.google.com/g/2005#overall'/>
+		<yt:statistics favoriteCount='0' viewCount='107'/>
+		<yt:rating numDislikes='0' numLikes='1'/>
+	</entry>
+	<entry gd:etag='W/&quot;CkYMSH47eCp7ImA9WxFbEkQ.&quot;'>
+		<id>tag:youtube.com,2008:video:jeYWPF9UIKg</id>
+		<published>2010-07-04T09:14:07.000Z</published>
+		<updated>2010-07-05T00:36:29.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment' label='Entertainment'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='Battleground europe'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='wwiionline'/>
+		<title>Battleground Europe: Rundflug in der JU52</title>
+		<content type='application/x-shockwave-flash' src='http://www.youtube.com/v/jeYWPF9UIKg?f=videos&amp;app=youtube_gdata'/>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=jeYWPF9UIKg&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/jeYWPF9UIKg/responses?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/jeYWPF9UIKg/related?v=2'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=jeYWPF9UIKg'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/jeYWPF9UIKg?v=2'/>
+		<author>
+			<name>bonvivant1976</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/bonvivant1976</uri>
+		</author>
+		<yt:accessControl action='comment' permission='allowed'/>
+		<yt:accessControl action='commentVote' permission='allowed'/>
+		<yt:accessControl action='videoRespond' permission='moderated'/>
+		<yt:accessControl action='rate' permission='allowed'/>
+
+		<yt:accessControl action='embed' permission='allowed'/>
+		<yt:accessControl action='syndicate' permission='allowed'/>
+		<yt:accessControl action='list' permission='allowed'/>
+		<gd:comments>
+			<gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/jeYWPF9UIKg/comments?v=2' countHint='0'/>
+		</gd:comments>
+		<media:group>
+			<media:category label='Entertainment' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category>
+			<media:content url='http://www.youtube.com/v/jeYWPF9UIKg?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='215' yt:format='5'/>
+			<media:content url='rtsp://v2.cache2.c.youtube.com/CiILENy73wIaGQmoIFRfPBbmjRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='215' yt:format='1'/>
+			<media:content url='rtsp://v7.cache7.c.youtube.com/CiILENy73wIaGQmoIFRfPBbmjRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='215' yt:format='6'/>
+			<media:credit role='uploader' scheme='urn:youtube'>bonvivant1976</media:credit>
+			<media:description type='plain'>Battleground Europe: Kleiner Test- und Rundflug in der JU52. Keine Gefechte und keine Dog-Fights, nur eine Platzrunde bei Aachen. Version 1.31.</media:description>
+			<media:keywords>Battleground europe, wwiionline</media:keywords>
+			<media:player url='http://www.youtube.com/watch?v=jeYWPF9UIKg&amp;feature=youtube_gdata'/>
+			<media:restriction type='country' relationship='deny'>DE</media:restriction>
+			<media:thumbnail url='http://i.ytimg.com/vi/jeYWPF9UIKg/default.jpg' height='90' width='120' time='00:01:47.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/jeYWPF9UIKg/2.jpg' height='90' width='120' time='00:01:47.500'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/jeYWPF9UIKg/1.jpg' height='90' width='120' time='00:00:53.750'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/jeYWPF9UIKg/3.jpg' height='90' width='120' time='00:02:41.250'/>
+			<media:thumbnail url='http://i.ytimg.com/vi/jeYWPF9UIKg/hqdefault.jpg' height='360' width='480'/>
+			<media:title type='plain'>Battleground Europe: Rundflug in der JU52</media:title>
+			<yt:aspectRatio>widescreen</yt:aspectRatio>
+			<yt:duration seconds='215'/>
+			<yt:uploaded>2010-07-04T09:14:07.000Z</yt:uploaded>
+			<yt:videoid>jeYWPF9UIKg</yt:videoid>
+		</media:group>
+		<yt:statistics favoriteCount='0' viewCount='13'/>
+	</entry>
+
+</feed>

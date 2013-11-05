@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<!-- Define a configuration property that enables/disables the use of the generator 
+	     we define next -->
+	<define-configuration-property name="gwtia.debugWidgets" is-multi-valued="false" />
+	
+	<!-- Set the value of the configuration property to true -->
+	<!-- change the value to false to stop the Generator from running -->
+	<set-configuration-property name="gwtia.debugWidgets" value="true" />
+	
+	
+	<!-- Define the generator to be used.... -->
+   	<generate-with class="com.manning.gwtia.ch18.rebind.WidgetDebugGenerator">
+   		<!-- ...if all the following conditions are matched: -->
+	    <all>
+	    	<!-- the type of the class must be assignable to Widget, but.... -->
+	   		<when-type-assignable class="com.google.gwt.user.client.ui.Widget"/>
+	   		<!-- ...must not be assignable to UiBinder or LoggingPopup -->
+	   		<none>
+	   			<when-type-assignable class="com.google.gwt.uibinder.client.UiBinder"/>
+	   			<when-type-assignable class="com.google.gwt.logging.client.LoggingPopup"/>	   			
+	   		</none>
+	   		<!-- inside the Generator class, we will check if the gwtia.debugWidgets configuration 
+	   		    property is set to true (in which case we'll run the generator, and if not, we won't)
+	   		    that check could also have been done in this definition, but then we wouldn't see how
+	   		    to access and use property values inside the Generator. 
+	   		-->
+	    </all>
+	</generate-with>
+
+</module>

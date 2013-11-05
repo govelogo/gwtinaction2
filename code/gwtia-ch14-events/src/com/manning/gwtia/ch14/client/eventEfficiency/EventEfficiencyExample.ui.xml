@@ -1,0 +1,88 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:me="urn:import:com.manning.gwtia.ch14.client.eventSinking">
+
+
+<ui:style>
+.panel1 {
+	background-color: #33CCFF;
+	height: 390px;
+	width: 600px;
+}
+
+.wrapper {
+	height: 410px;
+	width: 620px;
+}
+
+.in{
+	border-width:5px;	
+	border-style:inset
+}
+
+.panelName{
+		color: #ffffff;
+		text-align: right;
+}
+.title {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+}
+.instr {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	text-align: left;
+	padding-bottom: 5px;
+}
+</ui:style>
+
+<g:DockLayoutPanel unit="PCT">
+	<g:north size="5">
+		<g:FlowPanel>
+				<g:Label addStyleNames="{style.title}">Efficient Event Handling</g:Label>
+				<g:Label addStyleNames="{style.instr}">Each button is linked to the same event handler</g:Label>
+				
+		</g:FlowPanel>
+	</g:north>
+	<g:south size="40">
+		<g:FlowPanel>
+			<g:Button ui:field="clear">Clear Information</g:Button>
+			<g:ScrollPanel height="80%" addStyleNames="{style.in}" ui:field="scroller">
+				<g:FlowPanel ui:field="comment"></g:FlowPanel>
+			</g:ScrollPanel> 
+		</g:FlowPanel>
+	</g:south>
+	<g:center>
+		<g:Grid>
+			<g:row>
+			   <g:customCell><g:Button ui:field="butt00">(0,0)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt01">(0,1)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt02">(0,2)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt03">(0,3)</g:Button></g:customCell>
+			</g:row>
+			<g:row>
+			   <g:customCell><g:Button ui:field="butt10">(1,0)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt11">(1,1)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt12">(1,2)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt13">(1,3)</g:Button></g:customCell>
+			</g:row>
+			<g:row>
+			   <g:customCell><g:Button ui:field="butt20">(2,0)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt21">(2,1)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt22">(2,2)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt23">(2,3)</g:Button></g:customCell>
+			</g:row>
+			<g:row>
+			   <g:customCell><g:Button ui:field="butt30">(3,0)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt31">(3,1)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt32">(3,2)</g:Button></g:customCell>
+			   <g:customCell><g:Button ui:field="butt33">(3,3)</g:Button></g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:center>
+</g:DockLayoutPanel>
+
+</ui:UiBinder>

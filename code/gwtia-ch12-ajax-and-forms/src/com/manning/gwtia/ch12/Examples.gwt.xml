@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtia_ch12_ajax_and_forms">
+
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.jsonp.Jsonp'/>
+  <inherits name='com.google.gwt.json.JSON'/>
+  <inherits name='com.google.gwt.xml.XML'/>
+
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <entry-point class='com.manning.gwtia.ch12.client.Examples'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

@@ -1,0 +1,19 @@
+<module>
+
+	<define-property name="isWeekend" values="workhard,partytime"/>
+	<property-provider name="isWeekend" generator="com.manning.gwtia.ch17.linker.WeekendPropertyProviderGenerator"/>
+	
+	
+	<replace-with class="com.manning.gwtia.ch17.client.weekend.Type_Workday">
+		<when-type-is class="com.manning.gwtia.ch17.client.weekend.Type"/>
+			<when-property-is name="isWeekend" value="workhard"/>
+	</replace-with>
+		
+	<replace-with class="com.manning.gwtia.ch17.client.weekend.Type_Weekend">
+		<when-type-is class="com.manning.gwtia.ch17.client.weekend.Type"/>
+			<when-property-is name="isWeekend" value="partytime"/>
+	</replace-with>
+	
+	<inherits name="com.google.gwt.resources.Resources" />
+
+</module>

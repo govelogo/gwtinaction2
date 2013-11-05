@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+table {
+  border-collapse: collapse;
+}
+
+table,th,td {
+  border: thin solid black;
+  text-align: center;
+}
+
+table tr td * {
+  max-width: 600px;
+  overflow: hidden;
+padding: 4px;
+}
+table tr td img {
+  width: 50px;
+  height: 50px;
+}

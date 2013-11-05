@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>The Editor chapter shows how to use the different types of editors and drivers in the Editor framework. 
+			<br>This demo shows some of them in action.</br></p>
+			<p>
+				<b>Employees example</b>
+				- This is a simple example where SimpleBeanEditorDriver have been used to edit and flush data into a simple Employee class.
+				  <br>The example uses the Editor type to manipulate the backing object. </br>
+			</p>
+			<p>
+				<b>Phone book example</b>
+				- This example uses SimpleBeanEditorDriver. The example uses a no-arg method-defined editor.
+			</p>		
+			<p>
+				<b>Contacts</b>
+				- This example uses RequestFactoryEditorDriver to manipulate contact data; this is based on the earlier RequestFactory example.
+				<br>The examples uses ValueAwareEditor, ListEditor, and Editor.</br>
+			</p>
+			<p>
+				<b>List contacts</b>
+				- This example uses RequestFactoryEditorDriver to list all contacts created in the Contacts example, ListAllContactsView. 
+				<br>This example shows how to use the HasDataEditor adapter.</br>
+			</p>
+			<p>
+				<b>List contacts 2</b>
+				- This example uses RequestFactoryEditorDriver to list all contacts created in the Contacts example, ListAllContactsEditor.
+				<br> This example shows how to use CompositeEditor and LeafValueEditor.</br>
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

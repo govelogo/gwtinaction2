@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:ScrollPanel ui:field="scrollPanel">
+		<g:HTMLPanel>
+			<h1 style="font-face:Arial;">Introduction</h1>
+			<p>Dear reader,</p>
+			<p>This is the set of examples that goes with the GWTiA JSNI chapter
+			</p>
+			<p>
+				<b>Computed Style</b>
+				A simple example of Deferred Binding in action to manage browser differences when computing the style of a DOM element.
+			</p>
+			<p>
+				<b>HTML 5 Audio</b>
+				Examining how GWTs aproach to HTML 5 widgets uses deferred binding plus additional aspects.
+			</p>
+			<p>
+				<b>Property Example</b>
+				A user defined property (isWeekend) plus a property provider to determine the value based on the date.
+			</p>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+
+</ui:UiBinder> 

@@ -1,0 +1,81 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:dt='urn:import:com.manning.gwtia.ch09.client.views'>
+	<ui:style src="../common.css">
+	  	.idField{
+			display : inline;
+      		padding-right: 25px;
+			}
+	  	.contactLabel{
+			font-weight: bold;
+			font-size: 16px;
+			text-align: center;
+			padding: 5px 0;
+			width: 100%;
+		}
+	
+	</ui:style>
+	<g:HTMLPanel>
+	   <g:DockLayoutPanel unit="PX" height="860px">
+	<g:north size="201.0">
+		<g:FlowPanel>
+			<g:Label addStyleNames="{style.title}">GWTiA Editor Example</g:Label>
+			<g:Label addStyleNames="{style.instr}" height="17px">To insert a new contact, click the Reset button, type data in the editable fields and click Save.</g:Label>
+			<g:Label addStyleNames="{style.instr}" height="22px">To edit a contact type data into editable fields and click Save.</g:Label>			
+			<g:Label addStyleNames="{style.instr}" height="17px">To fetch a created contact from the server type a contact ID and click the Get Contact button</g:Label>
+		    <g:Label addStyleNames="{style.instr}" height="17px">To delete a created contact, click the Delete Contact button</g:Label>
+		    <g:Label addStyleNames="{style.instr}" height="26px">Uses ListEditor and Editor with RequestFactoryEditorDriver</g:Label>
+			
+			<g:FlowPanel addStyleNames="{style.flowpanel}" height="89px">
+			<g:FlowPanel height="34px" width="298px">
+				<g:Label addStyleNames="{style.inline}">Contact ID:</g:Label>
+				
+				<g:LongBox ui:field="fetchId" alignment="LEFT" ></g:LongBox>
+			</g:FlowPanel>
+			<g:FlowPanel height="25px" width="88px">
+					<g:Button styleName="{style.important}" ui:field="fetchContactButton" text="Get contact"/>
+			</g:FlowPanel>
+		</g:FlowPanel>
+		</g:FlowPanel>
+	</g:north>
+	
+	<g:south size="623.0">
+	<g:FlowPanel addStyleNames="{style.flowpanel}">
+	    	<g:FlowPanel>
+    			<g:Label height="44px" addStyleNames="{style.contactLabel}" width="451px">Contact</g:Label>
+    		</g:FlowPanel>
+	
+			<g:FlowPanel height="33px" width="450px">
+				<g:Label addStyleNames="{style.idField}" horizontalAlignment="ALIGN_CENTER" width="79px">ID:</g:Label>				
+				<g:LongBox ui:field="id" alignment="LEFT" width="207px" readOnly="true" enabled="false" direction="RTL" ></g:LongBox>
+			</g:FlowPanel>
+	
+			<g:FlowPanel height="66px">
+				<g:FlowPanel height="32px">
+					<g:Label addStyleNames="{style.inline}">Email:</g:Label>
+					<g:TextBox ui:field="email" textAlignment="ALIGN_LEFT" width="80%"></g:TextBox>
+				</g:FlowPanel>	
+				<g:FlowPanel height="27px">
+					<g:Label addStyleNames="{style.inline}">Name:</g:Label>
+				
+					<g:TextBox ui:field="name" textAlignment="ALIGN_LEFT" width="80%"></g:TextBox>
+				</g:FlowPanel>
+			</g:FlowPanel>
+			<g:FlowPanel height="111px">
+				<g:Label addStyleNames="{style.inline}" horizontalAlignment="ALIGN_LEFT" text="Notes:">Notes:</g:Label>
+				<g:TextArea ui:field="notes" textAlignment="ALIGN_LEFT" height="93px" width="80%"></g:TextArea>
+			</g:FlowPanel>
+			<dt:PhoneListWidget ui:field="phonesWidget" height="216px"></dt:PhoneListWidget>
+			<g:FlowPanel addStyleNames="{style.table}" height="49px">
+					<g:Button styleName="{style.important}" ui:field="clearContactButton" text="Clear contact"/>					
+					<g:Button styleName="{style.important}" ui:field="saveContactButton" text="Save contact"/>
+					<g:Button styleName="{style.important}" ui:field="deleteContactButton" text="Delete contact"/>
+			</g:FlowPanel>
+			
+	</g:FlowPanel>
+	</g:south>
+</g:DockLayoutPanel>
+	   
+	</g:HTMLPanel>
+</ui:UiBinder> 	
